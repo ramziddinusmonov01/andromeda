@@ -16,6 +16,10 @@ button {
   background-color: #fff;
 }
 
+body {
+  background-color: #030303;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -38,4 +42,14 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.header {
+  width: 100%;
+  max-width: 1404px;
+  height: 800px;
+  background-image: url(../image/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
