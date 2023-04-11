@@ -1,43 +1,85 @@
 .request {
+   margin-top: 204px;
 
-   &__title {
-   }
+   &__title {}
 
-   &__bask-title {
-   }
+   &__bask-title {}
 }
 
 .request-head {
    position: relative;
    color: $white;
 }
+
 .title {
    @include font($fw: 700, $fz: 80px, $lh: 77px);
    text-transform: uppercase;
 }
+
 .back-title {
    @include font($fw: 700, $fz: 130px, $lh: 124px);
    text-transform: uppercase;
    position: absolute;
-   top: 0;
-   left: 0;
+   top: -74px;
+   left: -115px;
+   z-index: -1;
+   -webkit-text-stroke: 1px $violet;
+   -webkit-text-fill-color: $dark;
+
 
 }
+
 .request-body {
+   margin-top: 42px;
 
-   &__text {
+   &__row {
+      display: flex;
+      align-items: center;
+      gap: 67px;
    }
-}
-.request-form {
 
+   &__img {
+      width: 555px;
+      height: 413px;
+      background-color: $black;
+      border: 0.25px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0px 4px 50px 20px linear-gradient($blue, $grabe);
+      border-radius: 41.9192px;
+      position: relative;
+      img{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+      }
+
+   }
+
+   &__text {}
+}
+
+.request-form {
+   display: flex;
+   flex-direction: column;
+   justify-content: stretch;
    &__label {
+      @include font($fw: 700, $fz: 24px, $lh: 110%);
+      color: $white;
+      width: 100%;
    }
 
    &__input {
+      margin-top: 25px;
+      margin-bottom: 55px;
+      width: 100%;
+      padding: 15px 10px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #fff;
+      @include font($fw: 300, $fz: 20px, $lh: 100%);
+      background-color: transparent;
    }
 
-   &__button {
-   }
+   &__button {}
 }
-.button-pink {
-}
+
+.button-pink {}
