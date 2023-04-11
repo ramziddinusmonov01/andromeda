@@ -39,8 +39,6 @@ body {
 
 .nav {
   padding: 56px 0;
-}
-.nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +48,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 22px;
 }
 
 .nav-logo {
@@ -76,4 +75,20 @@ body {
           align-items: center;
   gap: 48px;
   margin-right: 180px;
+}
+.title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 77px;
+  text-transform: uppercase;
+}
+
+.back-title {
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 124px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
