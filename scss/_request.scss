@@ -8,6 +8,8 @@
 }
 
 .request-head {
+   position: relative;
+   color: $white;
 }
 .title {
    @include font($fw: 700, $fz: 80px, $lh: 77px);

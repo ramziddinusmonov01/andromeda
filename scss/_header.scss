@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    position: relative;
 }
 .nav {
     padding: 56px 0;
@@ -30,37 +31,109 @@
     display: flex;
     align-items: center;
     gap: 48px;
-    margin-right: 180px;
+
 
 		// .nav-menu__item
 
 		&__item {
+            list-style: none;
 		}
 
 		// .nav-menu__link
 
 		&__link {
+            @include font(400, 16px, 15px);
+            color:$white;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: -9px;
+                left: 0px;
+                width: 0;
+                height: 1px;
+                background-color:#fff;
+                transition: .1s linear;
 		}
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -9px;
+                left: 0px;
+                width: 0;
+                height: 1px;
+                background-color:#fff;
+                transition: .1s linear;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+}
 }
 .nav-social {
+    display: flex;
+    align-items: center;
+    gap:25px;
 }
 .nav-social-item {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.nav-social__phone{
+    @include font(400, 16px, 15px);
+    color:$white;
+
 }
 .header-info {
+    padding-top: 45px;
 
 		// .header-info__title
 
 		&__title {
+            @include font(700, 140px, 133px);
+            color:$white;
+            letter-spacing: 0.2em;
+            margin-bottom: 16px;
+
 		}
 
 		// .header-info__desc
 
 		&__desc {
+            @include font(300, 36px, 43px);
+            letter-spacing: 0.05em;
+            color:$white;
+            width: 100%;
+            max-width: 678px;
+            margin-bottom: 56px;
+            span{
+                font-weight: 500;
+            }
 		}
 
 		// .header-info__label
 
 		&__label {
+            @include font(500, 14px, 14px);
+            color:$white;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            position: relative;
+            &:not(:nth-child(1)){
+                margin-left: 42px;
+            }
+
+            input{
+                position: absolute;
+                left: -20px;
+                top: 0;
+            }
 		}
 
 		// .header-info__btns
@@ -80,5 +153,8 @@
 		// .header-main__img
 
 		&__img {
+            position: absolute;
+            bottom: 0;
+            right: 60px;
 		}
 }
