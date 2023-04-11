@@ -8,12 +8,29 @@
     margin: 0 auto;
 }
 .nav {
-}
-.container {
+    padding: 56px 0;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
 }
 .nav-logo {
+    display: flex;
+       img{
+        display: flex;
+        width: 305px;
+        height:72px;
+        object-fit: contain;
+
+       }
 }
 .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-right: 180px;
 
 		// .nav-menu__item
 

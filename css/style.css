@@ -36,3 +36,44 @@ body {
   background-size: cover;
   margin: 0 auto;
 }
+
+.nav {
+  padding: 56px 0;
+}
+.nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav-logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 305px;
+  height: 72px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 48px;
+  margin-right: 180px;
+}
