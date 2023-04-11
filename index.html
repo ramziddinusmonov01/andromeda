@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,41 @@
    <!-- Css -->
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
+
 <body>
 
-   
+
 
 
    <div class="request">
       <div class="container">
-         
+         <div class="request-head">
+            <h2 class="request__title title">Оставь заявку — начни зарабатывать</h2>
+            <h2 class="request__bask-title back-title">ЗАРАБАТЫВАЙ</h2>
+         </div>
+         <div class="request-body">
+            <form action="#" class="request-form">
+               <label for="name" class="request-form__label">
+                  Как тебя зовут?
+                  <input type="text" id="name" name="name" placeholder="Мария Иванова" class="request-form__input">
+               </label>
+               <label for="phone" class="request-form__label">
+                  Твой телефон:
+                  <input type="tel" id="phone" name="phone" placeholder="+7 (999) 457-21-84"
+                     class="request-form__input">
+               </label>
+               <button class="request-form__button button-pink"></button>
+            </form>
+            <p class="request-body__text">Нажимая на кнопку “Отправить заявку” вы соглашаетесь с условиями политики
+               конфиденциальности
+            </p>
+         </div>
       </div>
    </div>
 
+
+
    <script src="./js/ap.js"></script>
-
-   <img src="./image/icons/❤️.svg" alt="">
-
-    <script src="./js/ap.js"></script>
-
 </body>
+
 </html>

@@ -1,0 +1,41 @@
+.request {
+
+   &__title {
+   }
+
+   &__bask-title {
+   }
+}
+
+.request-head {
+}
+.title {
+   @include font($fw: 700, $fz: 80px, $lh: 77px);
+   text-transform: uppercase;
+}
+.back-title {
+   @include font($fw: 700, $fz: 130px, $lh: 124px);
+   text-transform: uppercase;
+   position: absolute;
+   top: 0;
+   left: 0;
+
+}
+.request-body {
+
+   &__text {
+   }
+}
+.request-form {
+
+   &__label {
+   }
+
+   &__input {
+   }
+
+   &__button {
+   }
+}
+.button-pink {
+}

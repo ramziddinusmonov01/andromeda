@@ -22,3 +22,20 @@ button {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 77px;
+  text-transform: uppercase;
+}
+
+.back-title {
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 124px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
