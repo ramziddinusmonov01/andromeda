@@ -27,6 +27,11 @@ body {
   margin: 0 auto;
 }
 
+.request-head {
+  position: relative;
+  color: #fff;
+}
+
 .title {
   font-weight: 700;
   font-size: 80px;
